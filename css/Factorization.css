@@ -1,0 +1,160 @@
+.container {
+  overflow: auto;
+  max-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  width: 600px;
+
+  grid-gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-areas:
+    "title title title title"
+    ". main-section main-section ."
+    ". main-section main-section ."
+    "clear . . calculate"
+    "answer answer answer answer";
+
+  box-shadow: 0 0 5px 5px #660000;
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  padding: 10px;
+}
+h1 {
+  margin: 0px;
+  margin-bottom: 0px;
+ 
+}
+.title {
+  text-align: center;
+  background-color: rgb(121, 2, 2);
+  font-family: "Cabin Sketch", cursive;
+ 
+  gap: 0px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+
+  color: #fafafa;
+  grid-area: title;
+}
+
+.container button {
+  background-color: #f9f9f9;
+  outline: none;
+  border-radius: 9px;
+  border: 1px solid #161616;
+  color: #7e0000;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+
+  padding: 5px 6px;
+}
+.container button:hover {
+  background-color: #cfc0c0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.container button:active {
+  position: relative;
+  top: 1px;
+  background-color: #7e0000;
+}
+
+.main-section {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 3px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: #350000;
+  grid-area: main-section;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.calculate {
+  grid-area: calculate;
+}
+
+.answer {
+  grid-area: answer;
+  margin-top: 7px;
+  background-color: #f3f3f3;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+}
+
+.scan-number {
+  margin: 10px;
+}
+
+#tree {
+  text-align: center;
+  color: #7e0000;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+.title-inside {
+  color: #7e0000;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0px auto 0px auto; /*  keep it center */
+  color: #ffffff;
+  text-align: center;
+  background: #b60606;
+  font-size: 15px;
+  display: table;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.input-number {
+  background: #d3d3d3;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 0px 2px #9e0606;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.factors{
+  background: #9e0606;
+  font-family: Arial, sans-serif;
+  color:white;
+  font-weight: bold;
+  box-shadow: 0px 0px 2px 2px black;
+  border-radius: 6px;
+}
+
+h3 {
+  margin: 0px auto 0px auto; /*  keep it center */
+  color: #000000;
+  text-align: center;
+  background: #0f96cc;
+  font-size: 15px;
+  display: table;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+table {
+  margin: 0px auto;
+  table-layout: auto;
+  user-select: none;
+}
+
+tr {
+  text-align: center;
+}
